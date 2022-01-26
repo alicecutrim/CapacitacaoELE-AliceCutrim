@@ -21,3 +21,11 @@ List, list -> Int'''
     
     except ValueError:
         print(f'O item {Index+1} na lista de comprados nao corresponde a nenhum item na prateleira.')
+
+def main():
+    comprados = ['resistor100k','resistor100k', 'servoMotor', 'arduino', 'arduino', 'potenciometro', 'resistor1', 'LEDverm','LEDverm','LEDverm', 'LEDverd','LEDverd']
+    precoPago = [0.7,1, 5, 100,74,2.5,0.1, 1,1,2,2,1]
+    print(PriceChecker(comprados,precoPago))
+
+if __name__=='__main__':
+    main()
