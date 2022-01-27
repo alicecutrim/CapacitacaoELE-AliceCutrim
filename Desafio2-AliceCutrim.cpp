@@ -6,14 +6,14 @@ using namespace std;
 
 int main()
 {
-    float resultado;
+    float resultado; //Definição dos tipos das variáveis 
     long double fatorial = 1.0;
     int a, b, operacao, resto, erro;
     char repetir;
     
     cout << "CALCULADORA \n";
 
-    do{
+    do{ //Permite que sejam realizadas mais de uma operação no mesmo código
     system("CLS");
     cout << "Opções de Operação: " << endl << endl;
     cout << "1. Adição" << endl;
@@ -27,7 +27,7 @@ int main()
     cin >> operacao;
 
 
-    switch(operacao){
+    switch(operacao){ //switch-case para inicializar o bloco de código de acordo com a operação escolhida
         
         case 1:
         cout << "Entre com dois números: ";
@@ -56,7 +56,7 @@ int main()
         case 4:
         cout << "Entre com dividendo e divisor, respectivamente: ";
         cin >> a >> b;
-        try
+        try //Exception handling: divisão por zero
         {
             if (b == 0)
             {
