@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
     float resultado;
+    long double fatorial = 1.0;
     int a, b, operacao, resto, erro;
     char repetir;
     
@@ -89,12 +90,16 @@ int main()
         case 7:
         cout << "Entre com o valor cujo fatorial é desejado: " << endl;
         cin >> a;
-        for(resultado = 1; a > 1; a = a - 1)
+        if (a <0)
+            cout << "Não existe fatorial de números negativos";
+        else 
         {
-            resultado = resultado * a;
+            for (int i = 1; i <= a; ++i)
+            {
+                fatorial*= i;
+            }
         }
-        cout << "O fatorial de " << a << " é " << resultado << endl;
-        return 0;
+        cout << "O fatorial de " << a << " é " << fatorial << endl;
         break;
 
     }
