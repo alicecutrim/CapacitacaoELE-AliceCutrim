@@ -103,9 +103,9 @@ int main()
             for (int i = 1; i <= a; ++i)
             {
                 fatorial*= i;
-                cout << "O fatorial de " << a << " é " << fatorial << endl;
             }
         }
+        cout << "O fatorial de " << a << " é " << fatorial << endl;
         break;
 
     }
