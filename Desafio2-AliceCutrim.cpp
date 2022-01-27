@@ -64,13 +64,13 @@ int main()
             }
             resultado = a / b;
             resto = a % b;
+            cout << a << " / " << b << " = " << resultado << endl;
+            cout << "Resto = " << resto << endl;
         }
-        catch(int b)
+        catch(int c)
         {
             cout << "Exception: Zero Division" << '\n';
         }
-        cout << a << " / " << b << " = " << resultado << endl;
-        cout << "Resto = " << resto << endl;
         break;
         
         case 5:
