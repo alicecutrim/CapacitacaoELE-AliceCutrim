@@ -97,15 +97,15 @@ int main()
         cout << "Entre com o valor cujo fatorial é desejado: " << endl;
         cin >> a;
         if (a <0)
-            cout << "Não existe fatorial de números negativos";
+            cout << "Não existe fatorial de números negativos.\n";
         else 
         {
             for (int i = 1; i <= a; ++i)
             {
                 fatorial*= i;
+                cout << "O fatorial de " << a << " é " << fatorial << endl;
             }
         }
-        cout << "O fatorial de " << a << " é " << fatorial << endl;
         break;
 
     }
