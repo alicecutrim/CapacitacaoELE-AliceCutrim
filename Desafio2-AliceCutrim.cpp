@@ -83,8 +83,14 @@ int main()
         case 6:
         cout << "Entre com o valor cuja raiz quadrada é desejada: " << endl;
         cin >> a;
-        resultado = pow(a, 1/2);
-        cout << "A raiz quadrada de " << a << " é " << resultado << endl; 
+        if (a<0){
+            cout << "Não existe raiz quadrada real de números negativos." << endl;
+        }
+        else{
+            resultado = sqrt(a);
+            cout << "A raiz quadrada de " << a << " é " << resultado << endl;
+        }
+        break; 
         break;
         
         case 7:
@@ -107,6 +113,7 @@ int main()
     cin >> repetir;
     }
     while(repetir == 's' ||repetir  == 'S');
+    cout << "Programa finalizado. Obrigada por usar." << endl;
 
     cin.get();
     return 0;
